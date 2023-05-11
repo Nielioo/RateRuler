@@ -64,6 +64,7 @@ struct CurrencyConverterView: View {
                             
                             TextField("Enter amount" ,text: $amountInput)
                                 .padding()
+                                .frame(width: geometry.size.width*0.6)
                                 .background(Color.gray.opacity(0.10))
                                 .cornerRadius(8.0)
                                 .padding()
