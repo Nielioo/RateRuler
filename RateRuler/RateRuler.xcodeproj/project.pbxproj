@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050A73FF2A0A31AD00D76B46 /* CurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A73FE2A0A31AD00D76B46 /* CurrencyPickerView.swift */; };
+		053A5A4F2A0CCB5F009A5216 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 053A5A4E2A0CCB5F009A5216 /* Lottie */; };
+		053A5A532A0CCE4A009A5216 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A5A522A0CCE4A009A5216 /* LottieView.swift */; };
+		053A5A5B2A0CDF90009A5216 /* currency.json in Resources */ = {isa = PBXBuildFile; fileRef = 053A5A5A2A0CDF90009A5216 /* currency.json */; };
+		053A5A5D2A0CDF9C009A5216 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 053A5A5C2A0CDF9C009A5216 /* song.mp3 */; };
+		054B48362A04EC8F002A0383 /* RateRulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B48352A04EC8F002A0383 /* RateRulerApp.swift */; };
+		054B48382A04EC8F002A0383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B48372A04EC8F002A0383 /* ContentView.swift */; };
+		054B483A2A04EC90002A0383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054B48392A04EC90002A0383 /* Assets.xcassets */; };
+		054B483D2A04EC90002A0383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054B483C2A04EC90002A0383 /* Preview Assets.xcassets */; };
+		054B48472A04EC90002A0383 /* RateRulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B48462A04EC90002A0383 /* RateRulerTests.swift */; };
+		054B48512A04EC90002A0383 /* RateRulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B48502A04EC90002A0383 /* RateRulerUITests.swift */; };
+		054B48532A04EC90002A0383 /* RateRulerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B48522A04EC90002A0383 /* RateRulerUITestsLaunchTests.swift */; };
+		054B48602A04ED2A002A0383 /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B485F2A04ED2A002A0383 /* CurrencyConverterView.swift */; };
+		059503372A08FDEA00BFECFA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 059503362A08FDEA00BFECFA /* Alamofire */; };
+		0595033A2A08FF5000BFECFA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059503392A08FF5000BFECFA /* Currency.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		054B48432A04EC90002A0383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B482A2A04EC8F002A0383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 054B48312A04EC8F002A0383;
+			remoteInfo = RateRuler;
+		};
+		054B484D2A04EC90002A0383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B482A2A04EC8F002A0383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 054B48312A04EC8F002A0383;
+			remoteInfo = RateRuler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050A73FE2A0A31AD00D76B46 /* CurrencyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerView.swift; sourceTree = "<group>"; };
+		053A5A522A0CCE4A009A5216 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		053A5A5A2A0CDF90009A5216 /* currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currency.json; sourceTree = "<group>"; };
+		053A5A5C2A0CDF9C009A5216 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		054B48322A04EC8F002A0383 /* RateRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		054B48352A04EC8F002A0383 /* RateRulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRulerApp.swift; sourceTree = "<group>"; };
+		054B48372A04EC8F002A0383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		054B48392A04EC90002A0383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		054B483C2A04EC90002A0383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		054B48422A04EC90002A0383 /* RateRulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateRulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		054B48462A04EC90002A0383 /* RateRulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRulerTests.swift; sourceTree = "<group>"; };
+		054B484C2A04EC90002A0383 /* RateRulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateRulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		054B48502A04EC90002A0383 /* RateRulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRulerUITests.swift; sourceTree = "<group>"; };
+		054B48522A04EC90002A0383 /* RateRulerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRulerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		054B485F2A04ED2A002A0383 /* CurrencyConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
+		059503392A08FF5000BFECFA /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		054B482F2A04EC8F002A0383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059503372A08FDEA00BFECFA /* Alamofire in Frameworks */,
+				053A5A4F2A0CCB5F009A5216 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054B483F2A04EC90002A0383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054B48492A04EC90002A0383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053A5A542A0CCF5B009A5216 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				053A5A5A2A0CDF90009A5216 /* currency.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		053A5A572A0CDC1C009A5216 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				053A5A5C2A0CDF9C009A5216 /* song.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		054B48292A04EC8F002A0383 = {
+			isa = PBXGroup;
+			children = (
+				054B48342A04EC8F002A0383 /* RateRuler */,
+				054B48452A04EC90002A0383 /* RateRulerTests */,
+				054B484F2A04EC90002A0383 /* RateRulerUITests */,
+				054B48332A04EC8F002A0383 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		054B48332A04EC8F002A0383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054B48322A04EC8F002A0383 /* RateRuler.app */,
+				054B48422A04EC90002A0383 /* RateRulerTests.xctest */,
+				054B484C2A04EC90002A0383 /* RateRulerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		054B48342A04EC8F002A0383 /* RateRuler */ = {
+			isa = PBXGroup;
+			children = (
+				054B48352A04EC8F002A0383 /* RateRulerApp.swift */,
+				054B48372A04EC8F002A0383 /* ContentView.swift */,
+				054B48632A04EDD3002A0383 /* Utils */,
+				059503382A08FF3500BFECFA /* Model */,
+				054B48612A04EDBD002A0383 /* View */,
+				054B48392A04EC90002A0383 /* Assets.xcassets */,
+				054B483B2A04EC90002A0383 /* Preview Content */,
+			);
+			path = RateRuler;
+			sourceTree = "<group>";
+		};
+		054B483B2A04EC90002A0383 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				054B483C2A04EC90002A0383 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		054B48452A04EC90002A0383 /* RateRulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				054B48462A04EC90002A0383 /* RateRulerTests.swift */,
+			);
+			path = RateRulerTests;
+			sourceTree = "<group>";
+		};
+		054B484F2A04EC90002A0383 /* RateRulerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				054B48502A04EC90002A0383 /* RateRulerUITests.swift */,
+				054B48522A04EC90002A0383 /* RateRulerUITestsLaunchTests.swift */,
+			);
+			path = RateRulerUITests;
+			sourceTree = "<group>";
+		};
+		054B48612A04EDBD002A0383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				054B485F2A04ED2A002A0383 /* CurrencyConverterView.swift */,
+				050A73FE2A0A31AD00D76B46 /* CurrencyPickerView.swift */,
+				053A5A522A0CCE4A009A5216 /* LottieView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		054B48632A04EDD3002A0383 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				053A5A572A0CDC1C009A5216 /* Audio */,
+				053A5A542A0CCF5B009A5216 /* Lottie */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		059503382A08FF3500BFECFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				059503392A08FF5000BFECFA /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		054B48312A04EC8F002A0383 /* RateRuler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054B48562A04EC90002A0383 /* Build configuration list for PBXNativeTarget "RateRuler" */;
+			buildPhases = (
+				054B482E2A04EC8F002A0383 /* Sources */,
+				054B482F2A04EC8F002A0383 /* Frameworks */,
+				054B48302A04EC8F002A0383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RateRuler;
+			packageProductDependencies = (
+				059503362A08FDEA00BFECFA /* Alamofire */,
+				053A5A4E2A0CCB5F009A5216 /* Lottie */,
+			);
+			productName = RateRuler;
+			productReference = 054B48322A04EC8F002A0383 /* RateRuler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		054B48412A04EC90002A0383 /* RateRulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054B48592A04EC90002A0383 /* Build configuration list for PBXNativeTarget "RateRulerTests" */;
+			buildPhases = (
+				054B483E2A04EC90002A0383 /* Sources */,
+				054B483F2A04EC90002A0383 /* Frameworks */,
+				054B48402A04EC90002A0383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				054B48442A04EC90002A0383 /* PBXTargetDependency */,
+			);
+			name = RateRulerTests;
+			productName = RateRulerTests;
+			productReference = 054B48422A04EC90002A0383 /* RateRulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		054B484B2A04EC90002A0383 /* RateRulerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054B485C2A04EC90002A0383 /* Build configuration list for PBXNativeTarget "RateRulerUITests" */;
+			buildPhases = (
+				054B48482A04EC90002A0383 /* Sources */,
+				054B48492A04EC90002A0383 /* Frameworks */,
+				054B484A2A04EC90002A0383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				054B484E2A04EC90002A0383 /* PBXTargetDependency */,
+			);
+			name = RateRulerUITests;
+			productName = RateRulerUITests;
+			productReference = 054B484C2A04EC90002A0383 /* RateRulerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		054B482A2A04EC8F002A0383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					054B48312A04EC8F002A0383 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					054B48412A04EC90002A0383 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 054B48312A04EC8F002A0383;
+					};
+					054B484B2A04EC90002A0383 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 054B48312A04EC8F002A0383;
+					};
+				};
+			};
+			buildConfigurationList = 054B482D2A04EC8F002A0383 /* Build configuration list for PBXProject "RateRuler" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 054B48292A04EC8F002A0383;
+			packageReferences = (
+				059503352A08FDEA00BFECFA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				053A5A4D2A0CCB5F009A5216 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 054B48332A04EC8F002A0383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				054B48312A04EC8F002A0383 /* RateRuler */,
+				054B48412A04EC90002A0383 /* RateRulerTests */,
+				054B484B2A04EC90002A0383 /* RateRulerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		054B48302A04EC8F002A0383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054B483D2A04EC90002A0383 /* Preview Assets.xcassets in Resources */,
+				053A5A5D2A0CDF9C009A5216 /* song.mp3 in Resources */,
+				053A5A5B2A0CDF90009A5216 /* currency.json in Resources */,
+				054B483A2A04EC90002A0383 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054B48402A04EC90002A0383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054B484A2A04EC90002A0383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		054B482E2A04EC8F002A0383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0595033A2A08FF5000BFECFA /* Currency.swift in Sources */,
+				054B48382A04EC8F002A0383 /* ContentView.swift in Sources */,
+				054B48602A04ED2A002A0383 /* CurrencyConverterView.swift in Sources */,
+				054B48362A04EC8F002A0383 /* RateRulerApp.swift in Sources */,
+				050A73FF2A0A31AD00D76B46 /* CurrencyPickerView.swift in Sources */,
+				053A5A532A0CCE4A009A5216 /* LottieView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054B483E2A04EC90002A0383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054B48472A04EC90002A0383 /* RateRulerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054B48482A04EC90002A0383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054B48512A04EC90002A0383 /* RateRulerUITests.swift in Sources */,
+				054B48532A04EC90002A0383 /* RateRulerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		054B48442A04EC90002A0383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 054B48312A04EC8F002A0383 /* RateRuler */;
+			targetProxy = 054B48432A04EC90002A0383 /* PBXContainerItemProxy */;
+		};
+		054B484E2A04EC90002A0383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 054B48312A04EC8F002A0383 /* RateRuler */;
+			targetProxy = 054B484D2A04EC90002A0383 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		054B48542A04EC90002A0383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		054B48552A04EC90002A0383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		054B48572A04EC90002A0383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RateRuler/Preview Content\"";
+				DEVELOPMENT_TEAM = G6VH4SDWTF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rate Ruler";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nielio.RateRuler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		054B48582A04EC90002A0383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RateRuler/Preview Content\"";
+				DEVELOPMENT_TEAM = G6VH4SDWTF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rate Ruler";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nielio.RateRuler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		054B485A2A04EC90002A0383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6VH4SDWTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nielio.RateRulerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RateRuler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RateRuler";
+			};
+			name = Debug;
+		};
+		054B485B2A04EC90002A0383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6VH4SDWTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nielio.RateRulerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RateRuler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RateRuler";
+			};
+			name = Release;
+		};
+		054B485D2A04EC90002A0383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6VH4SDWTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nielio.RateRulerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RateRuler;
+			};
+			name = Debug;
+		};
+		054B485E2A04EC90002A0383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6VH4SDWTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nielio.RateRulerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RateRuler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		054B482D2A04EC8F002A0383 /* Build configuration list for PBXProject "RateRuler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054B48542A04EC90002A0383 /* Debug */,
+				054B48552A04EC90002A0383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054B48562A04EC90002A0383 /* Build configuration list for PBXNativeTarget "RateRuler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054B48572A04EC90002A0383 /* Debug */,
+				054B48582A04EC90002A0383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054B48592A04EC90002A0383 /* Build configuration list for PBXNativeTarget "RateRulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054B485A2A04EC90002A0383 /* Debug */,
+				054B485B2A04EC90002A0383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054B485C2A04EC90002A0383 /* Build configuration list for PBXNativeTarget "RateRulerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054B485D2A04EC90002A0383 /* Debug */,
+				054B485E2A04EC90002A0383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		053A5A4D2A0CCB5F009A5216 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		059503352A08FDEA00BFECFA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		053A5A4E2A0CCB5F009A5216 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 053A5A4D2A0CCB5F009A5216 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		059503362A08FDEA00BFECFA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 059503352A08FDEA00BFECFA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 054B482A2A04EC8F002A0383 /* Project object */;
+}
