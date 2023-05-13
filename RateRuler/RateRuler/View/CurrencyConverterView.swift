@@ -18,6 +18,7 @@ struct CurrencyConverterView: View {
     @State var amountOutput = "1"
     @State var currencyBaseList:[String] = []
     
+    @State private var isPlayAudio: Bool = true
     @State private var searchTerm: String = ""
     @State private var buttonScale: Double = 1.0
     @FocusState private var inputIsFocused: Bool
@@ -41,6 +42,15 @@ struct CurrencyConverterView: View {
         }
     }
     
+    func playAudio(){
+        audio.numberOfLoops = -1
+        audio.play()
+    }
+    
+    func stopAudio(){
+        audio.stop()
+    }
+    
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
@@ -50,6 +60,25 @@ struct CurrencyConverterView: View {
                             .font(.system(size: 30))
                             .bold()
                             .padding()
+                        Spacer()
+                        Button(action: {
+                            isPlayAudio.toggle()
+                            if isPlayAudio{
+                                playAudio()
+                            } else {
+                                stopAudio()
+                            }
+                        }, label: {
+                            if isPlayAudio{
+                                Image(systemName: "bell.fill")
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 24))
+                            } else {
+                                Image(systemName: "bell.slash.fill")
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 24))
+                            }
+                        }).padding(.trailing, geometry.size.width*0.1)
                     }
                     VStack {
                         HStack{
@@ -122,8 +151,9 @@ struct CurrencyConverterView: View {
                     
                 }.onAppear() {
                     makeRequest()
-                    audio.numberOfLoops = -1
-                    audio.play()
+                    if isPlayAudio{
+                        playAudio()
+                    }
                 }
             }}
     }
