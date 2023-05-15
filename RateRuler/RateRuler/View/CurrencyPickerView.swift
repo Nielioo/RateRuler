@@ -31,7 +31,8 @@ struct CurrencyPickerView: View {
                     }
                 }.searchable(text: $searchString, placement: .navigationBarDrawer(displayMode: .always))
             
-        }.navigationBarBackButtonHidden(true)
+        }
+//        .navigationBarBackButtonHidden(true)
     }
 }
 
