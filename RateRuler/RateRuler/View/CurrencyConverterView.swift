@@ -16,8 +16,10 @@ struct CurrencyConverterView: View {
     
     @State var baseInput = "USD"
     @State var baseOutput = "IDR"
+    @State var tmpBase = ""
     @State var amountInput = "1"
     @State var amountOutput = "1"
+    @State var tmpAmount = ""
     @State var currencyBaseList:[String] = []
     
     @State private var isPlayAudio: Bool = true
@@ -73,18 +75,17 @@ struct CurrencyConverterView: View {
                         }, label: {
                             if isPlayAudio{
                                 Image(systemName: "speaker.wave.1.fill")
-                                    .foregroundColor(Color.black)
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                                     .font(.system(size: 24))
                             } else {
                                 Image(systemName: "speaker.slash.fill")
-                                    .foregroundColor(Color.black)
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                                     .font(.system(size: 24))
                             }
                         }).padding(.trailing, geometry.size.width*0.1)
-                    }
+                    }.padding(.vertical)
+                    
                     VStack {
-                        
-                        
                         HStack{
                             NavigationLink(destination:
                                             CurrencyPickerView( selectedValue: $baseInput, currencies: currencyBaseList)) {
@@ -97,10 +98,9 @@ struct CurrencyConverterView: View {
                             
                             TextField("Enter amount" ,text: $amountInput)
                                 .padding()
-                                .frame(width: geometry.size.width*0.6)
+                                .frame(width: geometry.size.width*0.7)
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(8.0)
-                                .padding()
                                 .keyboardType(.decimalPad)
                                 .focused($inputIsFocused)
                                 .multilineTextAlignment(.trailing)
@@ -108,6 +108,23 @@ struct CurrencyConverterView: View {
                                     makeRequest()
                                 }
                         }.padding(.horizontal)
+                        
+                        Button(action: {
+                            tmpBase = baseInput
+                            baseInput = baseOutput
+                            baseOutput = tmpBase
+                            
+                            tmpAmount = amountInput
+                            amountInput = amountOutput
+                            amountOutput = tmpAmount
+                        }) {
+                            HStack{
+                                Image(systemName: "arrow.up.arrow.down")
+                                    .foregroundColor(Color.blue)
+                                    .font(.system(size: 24))
+                                Text("Swap")
+                            }
+                        }.padding()
                         
                         HStack{
                             NavigationLink(destination:
@@ -122,11 +139,10 @@ struct CurrencyConverterView: View {
                             Text("\(amountOutput)")
                                 .padding()
                                 .bold()
-                                .frame(width: geometry.size.width*0.6, alignment: .trailing)
+                                .frame(width: geometry.size.width*0.7, alignment: .trailing)
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(8.0)
                                 .lineLimit(1)
-                                .padding()
                         }.padding(.horizontal)
                         
                         LottieView(fileName: "currency.json", width: 75, height: 75).padding()
