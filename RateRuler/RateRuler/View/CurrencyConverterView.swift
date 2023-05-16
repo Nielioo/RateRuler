@@ -70,11 +70,11 @@ struct CurrencyConverterView: View {
                             }
                         }, label: {
                             if isPlayAudio{
-                                Image(systemName: "bell.fill")
+                                Image(systemName: "speaker.wave.1.fill")
                                     .foregroundColor(Color.black)
                                     .font(.system(size: 24))
                             } else {
-                                Image(systemName: "bell.slash.fill")
+                                Image(systemName: "speaker.slash.fill")
                                     .foregroundColor(Color.black)
                                     .font(.system(size: 24))
                             }
@@ -114,6 +114,7 @@ struct CurrencyConverterView: View {
                             
                             Text("\(amountOutput)")
                                 .padding()
+                                .bold()
                                 .frame(width: geometry.size.width*0.6, alignment: .trailing)
                                 .background(Color.gray.opacity(0.10))
                                 .cornerRadius(8.0)
