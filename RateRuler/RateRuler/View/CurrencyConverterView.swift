@@ -12,6 +12,8 @@ import Lottie
 
 struct CurrencyConverterView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @State var baseInput = "USD"
     @State var baseOutput = "IDR"
     @State var amountInput = "1"
@@ -81,25 +83,30 @@ struct CurrencyConverterView: View {
                         }).padding(.trailing, geometry.size.width*0.1)
                     }
                     VStack {
+                        
+                        
                         HStack{
                             NavigationLink(destination:
                                             CurrencyPickerView( selectedValue: $baseInput, currencies: currencyBaseList)) {
                                 Text("\(baseInput)")
                             }.padding()
                                 .frame(width: geometry.size.width*0.2)
-                                .background(Color.gray.opacity(0.10))
-                                .foregroundColor(Color.black)
+                                .background(.ultraThinMaterial)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                                 .cornerRadius(8.0)
                             
                             TextField("Enter amount" ,text: $amountInput)
                                 .padding()
                                 .frame(width: geometry.size.width*0.6)
-                                .background(Color.gray.opacity(0.10))
+                                .background(.ultraThinMaterial)
                                 .cornerRadius(8.0)
                                 .padding()
                                 .keyboardType(.decimalPad)
                                 .focused($inputIsFocused)
                                 .multilineTextAlignment(.trailing)
+                                .onSubmit(of: .text){
+                                    makeRequest()
+                                }
                         }.padding(.horizontal)
                         
                         HStack{
@@ -108,15 +115,15 @@ struct CurrencyConverterView: View {
                                 Text("\(baseOutput)")
                             }.padding()
                                 .frame(width: geometry.size.width*0.2)
-                                .background(Color.gray.opacity(0.10))
-                                .foregroundColor(Color.black)
+                                .background(.ultraThinMaterial)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                                 .cornerRadius(8.0)
                             
                             Text("\(amountOutput)")
                                 .padding()
                                 .bold()
                                 .frame(width: geometry.size.width*0.6, alignment: .trailing)
-                                .background(Color.gray.opacity(0.10))
+                                .background(.ultraThinMaterial)
                                 .cornerRadius(8.0)
                                 .lineLimit(1)
                                 .padding()
@@ -124,30 +131,30 @@ struct CurrencyConverterView: View {
                         
                         LottieView(fileName: "currency.json", width: 75, height: 75).padding()
                         
-                        Button(action: {
-                            makeRequest()
-                            inputIsFocused = false
-                        }) {
-                            Text("Convert!")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .padding()
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .foregroundColor(.white)
-                                .background(Color.blue)
-                                .cornerRadius(8.0)
-                                .padding()
-                                .scaleEffect(buttonScale)
-                            //                                .animation(.spring(response: 0.2, dampingFraction: 0.4, blendDuration: 0))
-                        }
-                        .onTapGesture {
-                            buttonScale = 0.8
-                        }
-                        .onChange(of: buttonScale) { newValue in
-                            if newValue == 1 {
-                                buttonScale = 0
-                            }
-                        }
+//                        Button(action: {
+//                            makeRequest()
+//                            inputIsFocused = false
+//                        }) {
+//                            Text("Convert!")
+//                                .font(.headline)
+//                                .fontWeight(.bold)
+//                                .padding()
+//                                .frame(minWidth: 0, maxWidth: .infinity)
+//                                .foregroundColor(.white)
+//                                .background(Color.blue)
+//                                .cornerRadius(8.0)
+//                                .padding()
+//                                .scaleEffect(buttonScale)
+//                            //                                .animation(.spring(response: 0.2, dampingFraction: 0.4, blendDuration: 0))
+//                        }
+//                        .onTapGesture {
+//                            buttonScale = 0.8
+//                        }
+//                        .onChange(of: buttonScale) { newValue in
+//                            if newValue == 1 {
+//                                buttonScale = 0
+//                            }
+//                        }
                     }
                     
                 }.onAppear() {
