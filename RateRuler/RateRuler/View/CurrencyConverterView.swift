@@ -101,12 +101,13 @@ struct CurrencyConverterView: View {
                                 .frame(width: geometry.size.width*0.7)
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(8.0)
-                                .keyboardType(.decimalPad)
+//                                .keyboardType(.decimalPad)
                                 .focused($inputIsFocused)
                                 .multilineTextAlignment(.trailing)
                                 .onSubmit(of: .text){
                                     makeRequest()
                                 }
+                                .submitLabel(.done)
                         }.padding(.horizontal)
                         
                         Button(action: {
@@ -137,15 +138,20 @@ struct CurrencyConverterView: View {
                                 .cornerRadius(8.0)
                             
                             Text("\(amountOutput)")
-                                .padding()
                                 .bold()
+                                .padding()
                                 .frame(width: geometry.size.width*0.7, alignment: .trailing)
                                 .background(.ultraThinMaterial)
+                                .foregroundColor(Color.secondary)
                                 .cornerRadius(8.0)
                                 .lineLimit(1)
                         }.padding(.horizontal)
                         
-                        LottieView(fileName: "currency.json", width: 75, height: 75).padding()
+                        if !inputIsFocused{
+                            LottieView(fileName: "currency.json", width: 75, height: 75)
+                                .padding()
+                                .padding()
+                        }
                         
 //                        Button(action: {
 //                            makeRequest()
@@ -160,9 +166,7 @@ struct CurrencyConverterView: View {
 //                                .background(Color.blue)
 //                                .cornerRadius(8.0)
 //                                .padding()
-//                                .scaleEffect(buttonScale)
-//                            //                                .animation(.spring(response: 0.2, dampingFraction: 0.4, blendDuration: 0))
-//                        }
+//                                .scaleEffect(buttonScale)                        }
 //                        .onTapGesture {
 //                            buttonScale = 0.8
 //                        }
